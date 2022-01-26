@@ -5,69 +5,87 @@
     <title>멩이씨네 피-씨방|컴퓨터 부품에 대한 지식을 한눈에!</title>
 
 
-    <a href="index.html"><img src="door.png" alt="My Image" width="400"></a>
-
-
     <style>
 
-        a{
+
+        a {
             text-decoration: none;
-            color:black;
+            color: dimgray;
         }
 
         .intro {
+            text-align: center;
             color: green;
-            border-bottom: 3px solid grey;
             margin: 0;
-            padding: 10px;
+            padding: 10px 10px 0px 10px;
         }
 
         ol {
-
-            border-right: 3px solid grey;
-            width: 100px;
+            font-size: 17px;
+            text-align: center;
             margin: 0;
-            padding: 10px 20px 30px 40px;
+            padding: 10px;
+            display: block;
+            border-bottom: 3px solid grey;
+        }
+
+        li {
+            display: inline;
+            padding: 30px;
+        }
+
+        h3 {
+            padding-top: 0px;
+            margin-top: 5px;
+        }
+
+        .first-intro {
+            background-color: #E6E6FA;
+            padding-bottom: 0px;
+        }
+
+        .login-box {
+            display: inline;
+            text-align: right;
+        }
+
+
+        .if-miss p {
+            color: cadetblue;
         }
     </style>
 
 </head>
+<body>
+<div class="first-intro">
+    <div class="intro">
+        <a href="index.html"><img src="door.png" alt="My Image" width="400"></a>
 
-<div class="intro">
-    <h2>컴퓨터 부품에 대한 지식을 한눈에!</h2>
+        <h3>컴퓨터에 대한 지식을 쉽게!</h3>
 
+
+        <ol>
+            <li><a href="cpu.html">CPU</a></li>
+            <li><a href="Graphic Card.html">Graphic Card</a></li>
+            <li><a href="RAM.html">RAM</a></li>
+            <li><a href="Storage.html">Storage</a></li>
+        </ol>
+    </div>
 </div>
 
-
-<body>
-<ol>
-    <li><a href="cpu.html">CPU</a></li>
-    <li><a href="Graphic Card.html">Graphic Card</a></li>
-    <li><a href="RAM.html">RAM</a></li>
-    <li><a href="Storage.html">Storage</a></li>
-</ol>
-    <p>
-        <div id="disqus_thread"></div>
-<script>
-    /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-    /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-    (function() { // DON'T EDIT BELOW THIS LINE
-    var d = document, s = d.createElement('script');
-    s.src = 'https://mr-meng.disqus.com/embed.js';
-    s.setAttribute('data-timestamp', +new Date());
-    (d.head || d.body).appendChild(s);
-    })();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-    </p>
-
+<p>
+    컴퓨터 용어에 대해 궁금하신 분들은 오세요우
+</p>
+<div class="login-box">
+    <p>ID<input type="text"></p>
+    <p>PASSWORD<input type="text"></p>
+    <input type="button" value="로그인" onclick="alert('아직 구현을 못했습니다')">
+    <input type="button" value="회원가입" onclick="alert('아직 구현을 못했습니다')">
+    <div class="if-miss" onclick="alert('아직 구현을 못했습니다')">
+        <p>아이디를 잊으셨나요?</p>
+        <p>비밀번호를 잊으셨나요?</p>
+    </div>
+</div>
 </body>
 
 
